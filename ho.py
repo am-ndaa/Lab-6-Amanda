@@ -11,6 +11,23 @@ def encoder(password):
     new_pass = "".join(new_pass_list)
     return new_pass
 
+def decoder(password):
+    list_num = []
+    enc_list = []
+    num_str = ''
+    password= str(password)
+    for num in password:
+        list_num.append(num)
+    for num in list_num:
+        num = int(num)
+        num -= 3
+        enc_list.append(num)
+    for num in enc_list:
+        num = str(num)
+        num_str += num
+    return num_str
+
+
 
 def menu_display():
     print("Menu")
