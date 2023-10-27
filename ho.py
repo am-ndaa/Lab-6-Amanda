@@ -1,6 +1,6 @@
 # Amanda
 print('This is mine')
-print("HI")
+
 # making encoder
 
 def encoder(password):
