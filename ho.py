@@ -2,7 +2,7 @@
 print('This is mine')
 
 # making encoder
-
+print("hello")
 def encoder(password):
     password = str(password)
     new_pass_list = []
