@@ -28,22 +28,22 @@ def decoder(password):
     return num_str
 
 
-
 def menu_display():
     print("Menu")
     print("-------------")
     print("1. Encode")
     print("2. Decode")
     print("3. Quit")
+    print()
 
 
 while True:
     menu_display()
     user_input = input("Please enter an option: ")
-    if user_input == "1" or user_input == "2":
+    if user_input == "1":
         password = input("Please enter your password to encode: ")
         print("Your password has been encoded and stored!")
-        menu_display()
-        if
+    elif user_input == "2":
+        print(f"The encoded password is {encoder(password)}, and the original password is {decoder(encoder(password))}")
     else:
         break
